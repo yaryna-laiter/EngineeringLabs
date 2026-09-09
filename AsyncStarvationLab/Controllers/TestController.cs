@@ -6,8 +6,6 @@ namespace EngineeringLabs.Controllers;
 [Route("api/[controller]")]
 public class TestController : Controller
 {
-    private int goodCounter = 0;
-    private int badCounter = 0;
     private async Task<string> TestAsyncMethod(string message)
     {
         await Task.Delay(1000);
@@ -18,12 +16,12 @@ public class TestController : Controller
     [HttpGet("good")]
     public async Task<string> GoodAsyncMethod()
     {
-        return await TestAsyncMethod($"Request g {++goodCounter}");
+        return await TestAsyncMethod("Good request completed");
     }
 
     [HttpGet("bad")]
     public async Task<string> BadasyncMethod()
     {
-        return TestAsyncMethod($"Request b {badCounter}").Result;
+        return TestAsyncMethod("Bad request completed").Result;
     }
 }
