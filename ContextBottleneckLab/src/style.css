@@ -1,0 +1,17 @@
+﻿body { font-family: Arial, sans-serif; margin: 24px; color: #222; }
+main { max-width: 600px; }
+h1 { font-size: 24px; }
+h2 { font-size: 18px; margin-top: 24px; }
+.toggle { display: flex; gap: 6px; }
+button { padding: 6px 14px; cursor: pointer; border: 1px solid #aaa; border-radius: 3px; background: white; }
+button[aria-pressed=true] { background: #222; color: white; border-color: #222; }
+button:focus-visible { outline: 2px solid #2674c5; outline-offset: 2px; }
+.note { font-size: 12px; color: #666; }
+section p { line-height: 1.5; }
+select { padding: 4px; }
+p { font-size: 14px; }
+ul { list-style: none; padding: 0 8px; max-height: 420px; overflow-y: auto; border: 1px solid #ddd; }
+li { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #ddd; }
+li label { cursor: pointer; }
+input { margin-right: 8px; }
+li span { color: #666; font-size: 14px; }

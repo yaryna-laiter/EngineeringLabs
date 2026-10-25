@@ -66,6 +66,14 @@ The lab uses EF Core SQL logging and a command interceptor to inspect and compar
 
 ---
 
+### 5. Context Bottleneck & Component Isolation (React)
+
+[ContextBottleneckLab](./ContextBottleneckLab/README.md) compares 600 heavy rows consuming one global Context with split Contexts and memoized component isolation.
+
+The lab includes a minimal checkbox list, separate baseline and fixed implementations, automated isolation tests, and a React DevTools recording walkthrough.
+
+---
+
 ## Goal
 
 Build practical knowledge of:
